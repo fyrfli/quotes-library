@@ -4,6 +4,8 @@ I wanted to create an "app" that would read in JSON and print out the results ra
 
 ## Next steps ...
 
-I want to add more quotes and a button to run the code instead of having the user reload the page
+I want to add more quotes and a button to run the code instead of having the user reload the page. 
 
---  18 May, 2022; 00:13:59
+Or at least create a timer loop to do the refreshing of the quotes automatically.
+
+--  18 May, 2022 - 10:42:14
