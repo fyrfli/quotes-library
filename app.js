@@ -1,3 +1,7 @@
+// Full year for footer
+const todayDate = new Date();
+jsyear.innerText = todayDate.getFullYear();
+
 const disp = document.querySelector(".display");
 
 fetch("FavouriteQuotes.json")
