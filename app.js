@@ -2,7 +2,7 @@
 const todayDate = new Date();
 jsyear.innerText = todayDate.getFullYear();
 
-const disp = document.querySelector(".display");
+const disp = document.querySelector(".quote");
 
 fetch("FavouriteQuotes.json")
   .then((response) => {
@@ -11,5 +11,6 @@ fetch("FavouriteQuotes.json")
   .then((data) => {
     numQuotes = Object.entries(data).length;
     num = Math.floor(Math.random() * numQuotes);
+    disp.classList.add("anim");
     disp.innerText = data[num].quote + "\n\n" + data[num].author.replace(/"/g, '');
   })
