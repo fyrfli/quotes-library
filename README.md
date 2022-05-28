@@ -9,3 +9,9 @@ I want to add more quotes and a button to run the code instead of having the use
 Or at least create a timer loop to do the refreshing of the quotes automatically.
 
 --  18 May, 2022 - 10:42:14
+
+## Looping done.
+
+I managed to get the looping done with a iteration count of 25 and an interval of 8seconds. So now, when you go to the live page, it should iterate 25 times through a random selection of my favourite quotes.
+
+-- 28 May, 2022 - 09:28:53
