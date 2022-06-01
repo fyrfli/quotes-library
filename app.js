@@ -21,7 +21,7 @@ fetch("FavouriteQuotes.json")
       intervalID = setInterval(() => {
         currQuote = getQuote(data);
         quoteDisplay.innerText = currQuote;
-      }, 8000);
+      }, 12000);
     }
   });
 
