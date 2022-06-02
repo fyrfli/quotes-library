@@ -16,7 +16,7 @@ fetch("FavouriteQuotes.json")
   })
   .then((data) => {
     currQuote = getQuote(data);
-    for (let i = 0; i < 25; i++) {
+    for (let i = 0; i < 50; i++) {
       quoteDisplay.innerText = currQuote;
       intervalID = setInterval(() => {
         currQuote = getQuote(data);
