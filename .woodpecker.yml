@@ -1,0 +1,23 @@
+pipeline:
+  publish:
+    image: appleboy/drone-scp
+    settings:
+      host: 
+        from_secret: jupiterIP
+      username: camille
+      key: 
+        from_secret: titenPrivateKey
+      target: /home/www/docker/quotes/jsquotes
+      source: .
+      
+  restart:
+    image: appleboy/drone-ssh
+    settings:
+      host: 
+        from_secret: jupiterIP
+      username: camille
+      key: 
+        from_secret: titanPrivateKey
+      script:
+        - docker restart quotes
+branches: master
