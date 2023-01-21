@@ -6,7 +6,7 @@ pipeline:
         from_secret: jupiterIP
       username: camille
       key: 
-        from_secret: titenPrivateKey
+        from_secret: titanPrivateKey
       target: /home/www/docker/quotes/jsquotes
       source: .
       
