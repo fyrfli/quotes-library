@@ -7,7 +7,7 @@ pipeline:
       username: camille
       key: 
         from_secret: DOPrivateKey
-      target: /home/www/docker/quotes/jsquotes
+      target: /home/www/docker
       source: .
       overwrite: true
       
