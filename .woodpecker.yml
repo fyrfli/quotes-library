@@ -9,6 +9,7 @@ pipeline:
         from_secret: titanPrivateKey
       target: /home/www/docker/quotes/jsquotes
       source: .
+      overwrite: true
       
   restart:
     image: appleboy/drone-ssh
