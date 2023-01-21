@@ -6,7 +6,7 @@ pipeline:
         from_secret: jupiterIP
       username: camille
       key: 
-        from_secret: titanPrivateKey
+        from_secret: DOPrivateKey
       target: /home/www/docker/quotes/jsquotes
       source: .
       overwrite: true
@@ -18,7 +18,7 @@ pipeline:
         from_secret: jupiterIP
       username: camille
       key: 
-        from_secret: titanPrivateKey
+        from_secret: DOPrivateKey
       script:
         - docker restart quotes
 branches: master
