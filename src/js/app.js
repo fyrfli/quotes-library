@@ -10,7 +10,7 @@ let intervalID;
 let iteratorID = 0;
 let currQuote;
 
-fetch("FavouriteQuotes.json")
+fetch("assets/FavouriteQuotes.json")
   .then((response) => {
     return response.json();
   })
