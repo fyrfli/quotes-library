@@ -1,0 +1,16 @@
+  body {
+    width: 80vw;
+    max-width: 500px;
+    margin: auto;
+    padding-top: 4rem;
+    background-color: beige;
+  }
+
+  .display {
+    background: linear-gradient(to bottom right, #0c024d, #0dbcc5);
+    background-attachment: fixed;
+    color: white;
+    font-size: 1.2rem;
+    padding: 2rem;
+    border-radius: 12px;
+  }
