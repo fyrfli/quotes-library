@@ -9,6 +9,7 @@ pipeline:
         from_secret: DOPrivateKey
       target: /u/jsquotes
       source: ./src
+      strip_components: 2
       
   restart:
     image: appleboy/drone-ssh
