@@ -16,7 +16,7 @@ Or at least create a timer loop to do the refreshing of the quotes automatically
 I managed to get the looping done with a iteration count of 25 and an interval of 8seconds. So now, when you go to the live page, it should iterate 25 times through a random selection of my favourite quotes.
 
 -- 28 May, 2022 - 09:28:53
-=======
---  18 May, 2022
-    00:13:59
->>>>>>> 7f4013d (Initial)
+
+## Changed the entire format of the page
+
+I didn't like that the looping would repeat the same quote several times so I decided on a column format instead. This way **all** the quotes show up at once. No looping, no excessive animations ... just a simple page.
