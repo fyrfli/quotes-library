@@ -10,7 +10,7 @@ let intervalID;
 let iteratorID = 0;
 let currQuote;
 
-fetch("assets/FavouriteQuotes.json")
+fetch("https://cdn.fyrfli.link/FavouriteQuotes.json")
   .then((response) => {
     return response.json();
   })
