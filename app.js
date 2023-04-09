@@ -1,6 +1,6 @@
 const disp = document.querySelector(".display");
 
-fetch("FavouriteQuotes.json")
+fetch("https://cdn.fyrfli.link/FavouriteQuotes.json")
   .then((response) => {
     return response.json();
   })
