@@ -8,7 +8,7 @@ const debugDisplay = document.querySelector(".debug");
 let i = 0;
 let quote_section = "";
 
-fetch("assets/FavouriteQuotes.json")
+fetch("https://cdn.fyrfli.link/FavouriteQuotes.json")
   .then((response) => {
     return response.json();
   })
