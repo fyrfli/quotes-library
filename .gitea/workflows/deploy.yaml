@@ -1,0 +1,19 @@
+on:
+  push:
+name: deploy updated site
+jobs:
+  deploy:
+    name: rsync the directories
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+      - name: deploy
+        uses: easingthemes/ssh-deploy@v5.1.0
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: '-avz --delete'
+          SOURCE: public/
+          REMOTE_HOST: $ {{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.TARGET }}
