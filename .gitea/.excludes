@@ -1,0 +1,7 @@
+archive/
+README.md
+public/
+.gitea/
+.git/
+.DS_Store
+FavouriteQuotes.json
