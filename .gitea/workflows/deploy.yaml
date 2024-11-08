@@ -1,5 +1,7 @@
 on:
   push:
+    branches:
+      - main
 name: deploy updated site
 jobs:
   deploy:
