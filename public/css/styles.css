@@ -1,3 +1,9 @@
+:root {
+  --light: #e6daa6;
+  --dark: #0c024d;
+  --lightgrey: #d3d3d3;
+  --darkgrey: #a9a9a9;
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +17,8 @@
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 16px;
-  background-color: light_dark(#e6daa6, #0c024d);
-  color: light_dark(#0c024d, #e6daa6);
+  background-color: light_dark(var(--light), var(--dark));
+  color: light_dark(var(--dark), var(--light));
   margin: 2rem auto;
 }
 .header {
@@ -27,7 +33,7 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  box-shadow: 1px 3px 5px light_dark(lightgrey, darkgrey);
+  box-shadow: 1px 3px 5px light_dark(var(--lightgrey), var(--darkgrey));
 }
 .hdr-h1 {
   font-size: 2rem;
@@ -37,10 +43,38 @@ body {
   width: 90%;
   margin: 2rem auto;
 }
-.quotes {
-  border: 1px solid lightgrey;
+.search {
+  margin: auto;
+  padding: 8px;
+  background-color: light_dark(var(--lightgrey), var(--darkgrey));
+  border: 1px solid var(--lightgrey);
   border-radius: 14px;
-  box-shadow: 1px 3px 5px light_dark(#d6d6a3, darkgrey);
+  margin-bottom: 0.6rem;
+}
+.search h2 {
+  text-align: center;
+  padding: 0 8px;
+}
+.search fieldset {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.text-input {
+  padding: 0.4rem 1.2rem;
+  background-color: light_dark(var(--darkgrey), var(--lightgrey));
+  border-radius: 14px;
+  color: light_dark(var(--light), var(--dark));
+  border: 1px solid light_dark(var(--dark), var(--light));
+}
+#filter-count {
+  padding: 0.2rem;
+}
+.quotes {
+  border: 1px solid var(--lightgrey);
+  border-radius: 14px;
+  box-shadow: 1px 3px 5px light_dark(#d6d6a3, var(--darkgrey));
   padding: 1rem;
   columns: 300px;
   column-gap: auto;
@@ -51,9 +85,9 @@ body {
   background: linear-gradient(to bottom right, #0c024d, #0dbcc5);
   background-attachment: fixed;
   color: beige;
-  border: 1px solid lightgrey;
+  border: 1px solid var(--lightgrey);
   border-radius: 14px;
-  box-shadow: 1px 3px 5px light_dark(lightgrey, darkgrey);
+  box-shadow: 1px 3px 5px light_dark(var(--lightgrey), var(--darkgrey));
   margin: 12px;
   padding: 1rem;
   max-width: 340px;

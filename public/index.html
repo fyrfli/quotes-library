@@ -8,6 +8,7 @@
   <title>fyrfli's favourite quotes</title>
   <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/styles.css">
+  <!-- <script defer src="js/app.js"></script> -->
 </head>
 
 <body>
@@ -18,8 +19,17 @@
   </header>
 
   <main class="container">
-    <article class="debug"></article>
+    <article class="search">
+      <form action="javascript:void(0);" method="post" id="live-search" class="styled">
+        <fieldset>
+          <h2>search for a quote</h2>
+          <input type="text" name="search" id="filter" class="text-input" placeholder="start typing..." onkeyup="liveSearch()">
+          <span id="filter-count"></span>
+        </fieldset>
+      </form>
+    </article>
     <article class="quotes"></article>
+    <article class="debug"></article>
   </main>
 
   <footer class="footer">
